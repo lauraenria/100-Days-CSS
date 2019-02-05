@@ -1,0 +1,15 @@
+{
+  "name": "100dayscss",
+  "version": "1.0.0",
+  "description": "1. Choose your branch (do not touch `master`) eg. `git checkout -b feature-name` 2. install less `npm install -g less`    - and run `npm install -g less-watch-compiler` if you want watches folders(and subfolders)for file changes and automatically compile the less css files into css. 3. cd `static` folder and run `less-watch-compiler less css`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lauraenria",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0"
+  }
+}

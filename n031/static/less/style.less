@@ -2,6 +2,7 @@
 // edit the line if you wanna use other fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
+
 // use only the available space inside the 400x400 frame
 .frame {
   position: absolute;
@@ -19,11 +20,129 @@
   font-family: 'Open Sans', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  &-background {
+    background: linear-gradient(to bottom right, #FFAB2C, #E4615F);
+  }
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.flex-center {
+  height: 100%; // important
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  // "original code"
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%,-50%);
+}
+
+// .dots{
+
+// }
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.dot-1 {
+  animation: 1.01s ease-in-out infinite waves;
+}
+
+.dot-2 {
+  animation: 1.02s ease-in-out infinite waves;
+}
+
+.dot-3 {
+  animation: 1.03s ease-in-out infinite waves;
+}
+
+.dot-4 {
+  animation: 1.04s ease-in-out infinite waves;
+}
+
+.dot-5 {
+  animation: 1.05s ease-in-out infinite waves;
+}
+
+.dot-6 {
+  animation: 1.06s ease-in-out infinite waves;
+}
+
+.dot-7 {
+  animation: 1.07s ease-in-out infinite waves;
+}
+
+.dot-8 {
+  animation: 1.08s ease-in-out infinite waves;
+}
+
+.dot-9 {
+  animation: 1.09s ease-in-out infinite waves;
+}
+
+.dot-10 {
+  animation: 1.10s ease-in-out infinite waves;
+}
+
+.dot-11 {
+  animation: 1.11s ease-in-out infinite waves;
+}
+
+.dot-12 {
+  animation: 1.12s ease-in-out infinite waves;
+}
+
+.dot-13 {
+  animation: 1.13s ease-in-out infinite waves;
+}
+
+.dot-14 {
+  animation: 1.14s ease-in-out infinite waves;
+}
+
+.dot-15 {
+  animation: 1.15s ease-in-out infinite waves;
+}
+
+.dot-16 {
+  animation: 1.16s ease-in-out infinite waves;
+}
+
+.dot-17 {
+  animation: 1.17s ease-in-out infinite waves;
+}
+
+.dot-18 {
+  animation: 1.18s ease-in-out infinite waves;
+}
+
+.dot-19 {
+  animation: 1.19s ease-in-out infinite waves;
+}
+
+.dot-20 {
+  animation: 1.20s ease-in-out infinite waves;
+}
+
+
+@keyframes waves {
+
+  0%,
+  100% {
+    transform: translateX(70px) scale(0.5);
+  }
+
+  50% {
+    transform: translatex(-70px);
+    background-color: #ffd1a8;
+  }
+
 }
