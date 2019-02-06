@@ -9,6 +9,7 @@
   "author": "lauraenria",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^5.13.0",
     "less": "^3.9.0",
     "less-watch-compiler": "^1.13.0"
   }

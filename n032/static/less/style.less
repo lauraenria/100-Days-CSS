@@ -1,0 +1,117 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+@color-White: #fff;
+@color-light-Green: #C6FFDD;
+@color-light-Green-2: #8ed273;
+@color-light-Orange: #FBD786;
+@color-light-Red: #f7797d;
+@color-light-Red-2: #e26e6e;
+@color-light-Grey: #a79d9d;
+
+@color-dark-Red: #c20b0b;
+@color-dark-Green: #309530de;
+
+
+.flex-center {
+    // height: 100%; // important
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // "original code"
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+}
+
+// use only the available space inside the 400x400 frame
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: @color-White;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &-background {
+        // vertical
+        // background: linear-gradient(0.25turn, #C6FFDD, #FBD786, #f7797d);
+        // horizontal
+        background: linear-gradient(@color-light-Green, @color-light-Orange, @color-light-Red);
+
+    }
+
+    .container-button {
+        height: 100%; // important
+    }
+
+    .btn {
+        height: 60px;
+        width: 240px;
+        background-color: @color-White;
+        border-radius: 35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+        .btn-minus,
+        .btn-plus,
+        .number {
+            font-weight: bold;
+        }
+
+        .btn-minus,
+        .btn-plus {
+            .flex-center();
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+
+            cursor: pointer;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+
+        }
+
+        .btn-minus {
+            color: @color-dark-Red;
+
+            &:hover {
+                color: @color-light-Green;
+
+                background: @color-light-Red-2;
+            }
+        }
+
+        .btn-plus {
+            color: @color-dark-Green;
+
+            &:hover {
+                color: @color-White;
+
+                background: @color-light-Green-2;
+            }
+        }
+
+        .number {
+            color: @color-light-Grey;
+        }
+
+    }
+
+}
