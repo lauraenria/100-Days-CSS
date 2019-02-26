@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.background {
+  background: #4A6FAF;
+  background: linear-gradient(bottom left #43389F 0%, #4ec6ca 100%);
+  background: -webkit-linear-gradient(bottom left, #43389F 0%, #4ec6ca 100%);
+  background: -moz-linear-gradient(bottom left, #43389F 0%, #4ec6ca 100%);
+  background: -o-linear-gradient(bottom left, #43389F 0%, #4ec6ca 100%);
+  background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+}
+.number {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+.one-1 {
+  position: absolute;
+  top: 0;
+  left: -16px;
+  width: 20px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.one-2 {
+  width: 25px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.zero-1,
+.zero-2 {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: 100px;
+  height: 100px;
+  border: 30px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  z-index: -1;
+}
+.zero-2 {
+  left: 100px;
+  z-index: -2;
+}
+.big,
+.small {
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.big {
+  position: absolute;
+  left: -5px;
+  display: block;
+  font-size: 80px;
+  line-height: 60px;
+  letter-spacing: 0;
+}
+.small {
+  position: absolute;
+  top: 162px;
+  font-size: 22px;
+  letter-spacing: 2px;
+}

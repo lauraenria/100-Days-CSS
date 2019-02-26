@@ -1,0 +1,82 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.frame-background {
+  background-color: #ffe8e3;
+}
+.flex-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.card .header {
+  width: 100%;
+  height: 20%;
+  background-color: #ff7076;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card .content {
+  margin: 10px;
+}
+.card .line {
+  background-color: #e7e7e7;
+  height: 5px;
+  margin-top: 6px;
+}
+.card .line-1 {
+  width: 50%;
+}
+.card .line-2 {
+  width: 20%;
+}
+.card .line-3 {
+  width: 100%;
+}
+.card .line-4 {
+  width: 70%;
+}
+.card .line-5 {
+  width: 40%;
+}
+.card .line-6 {
+  width: 80%;
+}
+.card-1 {
+  transform: translateX(40px) scale(1);
+}
+.card-3 {
+  transform: translateX(-40px);
+}
+@keyframes waves {
+  0%,
+  100% {
+    transform: translateX(70px) scale(0.5);
+  }
+  50% {
+    transform: translatex(-70px);
+    background-color: #ffd1a8;
+  }
+}

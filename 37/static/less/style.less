@@ -1,0 +1,105 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:700, 300);
+
+@color-grey: #e7e7e7;
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &-background {
+    background-color: #ffe8e3;
+  }
+}
+
+.flex-center {
+  height: 100%; // important
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+  background-color: #fff;
+
+  box-shadow: 2px 2px 8px rgba(#000, 0.2);
+
+  .header {
+    width: 100%;
+    height: 20%;
+    background-color: #ff7076;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .content {
+    margin: 10px;
+  }
+
+  .line {
+    background-color: @color-grey;
+    height: 5px;
+    margin-top: 6px;
+
+    &-1 {
+      width: 50%;
+    }
+    &-2 {
+      width: 20%;
+    }
+    &-3 {
+      width: 100%;
+    }
+    &-4 {
+      width: 70%;
+    }
+    &-5 {
+      width: 40%;
+    }
+    &-6 {
+      width: 80%;
+    }
+  }
+}
+
+.card-1 {
+  transform: translateX(40px) scale(1);
+}
+
+.card-2 {
+  // transform: translateX(40px);
+}
+
+.card-3 {
+  transform: translateX(-40px);
+}
+
+@keyframes waves {
+  0%,
+  100% {
+    transform: translateX(70px) scale(0.5);
+  }
+
+  50% {
+    transform: translatex(-70px);
+    background-color: #ffd1a8;
+  }
+}
