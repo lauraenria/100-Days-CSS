@@ -9,8 +9,12 @@
   "author": "lauraenria",
   "license": "ISC",
   "dependencies": {
+    "acorn": ">=6.4.1",
     "eslint": "^5.13.0",
+    "eslint-utils": ">=1.4.1",
+    "js-yaml": ">=3.13.1",
     "less": "^3.9.0",
-    "less-watch-compiler": "^1.13.0"
+    "less-watch-compiler": "^1.13.0",
+    "minimist": ">=0.2.1"
   }
 }
