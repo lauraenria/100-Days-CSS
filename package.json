@@ -15,6 +15,6 @@
     "js-yaml": ">=3.13.1",
     "less": "^3.9.0",
     "less-watch-compiler": "^1.13.0",
-    "minimist": ">=0.2.1"
+    "minimist": ">=1.2.6"
   }
 }
